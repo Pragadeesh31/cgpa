@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    <title>CGPA CALCULATOR</title>
+</head>
+<body class="bo">
+    <div class="mess" >
+        <div class="cgpa" id="cgpaDisplay">Loading....</div>
+    </div>
+    <script>
+        window.onload=function(){
+        const res=parseFloat(localStorage.getItem("cgpa"));
+        let username=localStorage.getItem("name");
+        let disp=`Congratulations ${username} you got ${res}`
+        document.getElementById("cgpaDisplay").textContent= disp;
+        }
+    </script>
+</body>
+</html>
