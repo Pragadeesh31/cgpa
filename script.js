@@ -1,5 +1,6 @@
 function goTo()
 {
+    const username=document.getElementById("name").value;
     let total=0;
     const credits=[4,1,3,3,3,4,1.5,1.5,0,1];
 
@@ -13,8 +14,8 @@ function goTo()
         }
     }
     const result=parseFloat(total/22);
-   localStorage.setItem("cgpa",result.toFixed(2));
-   alert(result.toFixed(2));
-   window.location.href="result.html";
-   
+    let disp=`Congratulations ${username} you got ${result}`
+    document.getElementById("cgpaDisplay").textContent= disp;
+
+
 }
