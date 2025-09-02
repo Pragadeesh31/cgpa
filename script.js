@@ -15,7 +15,7 @@ function goTo()
     }
     const result=parseFloat(total/22);
     let disp=`Congratulations ${username} you got ${result}`
-    document.getElementById("cgpaDisplay").textContent= disp;
-
+ alert("disp");
 
 }
+
