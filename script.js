@@ -14,9 +14,10 @@ function goTo()
         }
     }
     const result=parseFloat(total/22);
-    let disp=`Congratulations ${username} you got ${result}`
+    let disp=`Congratulations ${username} you got ${result}`;
  alert(disp);
 
 }
+
 
 
